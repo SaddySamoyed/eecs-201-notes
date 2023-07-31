@@ -1,5 +1,7 @@
 # Git & Github
 
+[TOC]
+
 家人们好, 今天我们来讲Git和Github. 没什么前言好说的, ~~因为我在正经学之前压根也不会.~~
 
 ## 1.1 Git and Version Control System(VCS)
@@ -34,8 +36,6 @@ Github上有很多远程代码仓库. 是当今最大的代码托管网站和开
 
 在Github Desktop创建repository时, 我们填写local(本机)位置, 就是在这台电脑上放在什么文件夹上. 创建repository时, 我们同时创建了一个在Github上的代码仓库.
 
-repository命名并创建好之后, 就可以往里面加任何格式的文件了, 修改或者加入文件后, Github Desktop会显示并同步所有变化. 这个时候选择在Github Desktop的同一repository的页面就可以填写本次变化的Summary(required)和Description了, 然后commit to main并push(上传)这一变化, 就可以把本次版本更新传到Github的托管仓库去了. 
-
 ## 1.5 Private and Public
 
 **在Github网站上创建的仓库默认为private, 只有自己访问其中的代码和文件.**
@@ -48,12 +48,17 @@ repository命名并创建好之后, 就可以往里面加任何格式的文件�
 
 3. 找到change repository visibility按钮, 点击改为public.
 
-   
 
 ## 1.6 Transfer ownership
 
 同样在Danger Zone中, 可以把自己的repository的所有权让给别人. 
 
-
-
 就这样, 然后就结束了(雾). 涉及到团队协作创作的其他问题, 当下还不用关心, 毕竟还没有团队, 用不到(悲). 以后再更新这个文档
+
+## 1.7 将本地更新同步到Github
+
+repository命名并创建好之后, 就可以往里面加任何格式的文件了, 修改或者加入文件后, Github Desktop会显示并同步所有变化. 这个时候选择在Github Desktop的同一repository的页面就可以填写本次变化的Summary(required)和Description了, 然后commit to main并push(上传)这一变化, 就可以把本次版本更新传到Github的托管仓库去了. 
+
+## 1.8 将Github上的更新同步到本地
+
+进入Repository文件夹, 右键点击Git Bash Here, 输入git pull origin.
