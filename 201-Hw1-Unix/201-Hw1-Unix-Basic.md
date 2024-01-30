@@ -109,7 +109,7 @@ Windows 程序员中有一个重要的群体，他们主要是为其他程序员
 
 于是就有了这些宗教式的争论。Unix 更好，因为你可以调试库。Windows 更好，因为玛吉阿姨可以确认她的邮件是否真的发送出去了。实际上，两者并没有优劣之分，只是价值观不同而已：Unix 的核心价值观是让其他程序员更好地工作，而 Windows 的核心价值观是让玛吉阿姨更好地工作。
 
-让我们看看另一种文化差异。雷蒙德说："经典的 Unix 文档写得简洁而完整......这种风格假定读者是积极的，能够推断出所讲内容的明显后果，并且有自信相信这些推断。仔细阅读每一个字，因为你很少会被重复告知任何事情"。哎呀呀，我想，他其实是在教年轻的程序员写更多不可能的手册。
+让我们看看另一种文化差异。雷蒙德说："经典的 Unix 文档写得简洁而完整......这种风格假定读者是积极的，能够推断出所讲内容的明显后果，并且有自信相信这些推断。仔细阅读每一个字，因为你很少会被重复告知任何事情"。他其实是在教年轻的程序员写更多不可能的手册。
 
 对于最终用户来说，你永远也无法摆脱这种情况。雷蒙德可能会说这是 "过于简单化的居高临下"，但 Windows 文化深知最终用户不喜欢阅读，即使他们同意阅读你的文档，他们也只会阅读最少的内容，所以你必须反复解释......事实上，一个好的 Windows 帮助文件的特点是，任何一个单独的主题都能让普通读者自己读完，而无需假定他们了解其他任何帮助主题。
 
@@ -125,6 +125,12 @@ Windows 程序员中有一个重要的群体，他们主要是为其他程序员
 
 Q: Has your computing experience thus far aligned more with “Windows culture” or “Unix culture”? What makes you feel that way? Do you feel that this blog post still holds up today, over 20 years since its publishing?
 
-I personally aligned more with "Windows culture" so far. Though I do think that WSL for me is somehow indispensable, and I do enjoy 
+I personally aligned more with "Windows culture" so far. Though I do think that WSL for me is somehow indispensable, and commands do make it easy to program, I still think that the graphical commands of Windows are something I would use more. 
 
-但我仍然认为 Windows 的图形化指令是我会更多地使用的. 现如今，我并不完全认同作者说的“Windows能够确认邮件，因
+I think a big reason for this is that today there are many very well integrated and beautiful IDEs like VSCode. These include graphical debugging processes, graphical resource management systems, etc. I think it's true that Windows' graphical instructions are difficult to program with, but WSL's system makes up for this.  If programmers 20 years ago had to choose basically only one system to develop on, nowadays programmers can easily use virtual machines, dual systems, and most conveniently, sub-systems to assist in their development, so it's not the same thing as it used to be. So I think another important reason is that the developers of WIndows took some of the advantages of the *nix system and fused them into Windows. It's not one sided. Linux, as a prime example of a *nix system, also has a lot of great graphical desktop versions, like Ubantu Desktop. 
+
+If I just want to look at a file, it takes me a few seconds to layer on a graphical folder, whereas if I want to type the `cd` command and the path it takes some typing and a lot more effort, so I'll definitely choose to use the mouse for the lightning bolt, and when I need to do something more computing, like make an `.exe` file I'll use the command line. 
+
+I do think that the combination of a text editor and a shell is better for writing small files, but I can't do large projects without using a highly graphical IDE without getting burned out. As the author says, in Windows Aunt Marge makes it easy to know if my emails have been sent or not, and in a graphical IDE I can easily manage my project as a whole. Even if I might count as a programmer but not Aunt Marge, I would prefer this approach most of the time because it is intuitive.
+
+Thus I don't think this article holds up completely by now, because the culture of operating systems is as much intertwined as the cultures of various nations today. For example, the author says that Linux will probably never be a desktop operating system, but now there are already a lot of linux desktop systems.
