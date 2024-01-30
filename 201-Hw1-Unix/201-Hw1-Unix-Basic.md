@@ -122,3 +122,9 @@ Windows 程序员中有一个重要的群体，他们主要是为其他程序员
 有太多文化单一的程序员，就像从未离开过明尼苏达州圣保罗市的典型美国孩子一样，分不清文化价值和人类核心价值之间的区别。我遇到过太多对 Windows 编程嗤之以鼻的 Unix 程序员，他们认为 Windows 是异教徒，是愚蠢的。雷蒙德经常掉进贬低其他文化价值观的陷阱，而不考虑这些价值观从何而来。在 Windows 程序员中很少发现这种偏执，因为总体而言，Windows 程序员都是以解决方案为导向的，没有意识形态偏见。至少，Windows 程序员会承认他们的文化存在缺陷，并实事求是地说："听着，如果你想把文字处理器卖给很多人，它就必须在他们的电脑上运行，如果这意味着我们要使用邪恶的注册表而不是优雅的 ~/.rc 文件来存储我们的设置，那就这样吧。Unix世界充满了自以为是的文化优越感、"倡导 "和Slashdot-karma-whoring宗派主义，而Windows世界则更加务实（"是啊，管它呢，我只是需要在这里谋生"），这一事实源于一种文化，它觉得自己受到了围攻，无法冲出服务器壁橱和业余爱好者市场，进入主流桌面。
 
 这种软弱无力的傲慢是《UNIX 编程艺术》的最大缺陷，但这其实并不是什么大缺陷：总体而言，这本书对编程的许多方面都有令人难以置信的有趣见解，以至于我愿意在罕见的臭烘烘的意识形态咆哮中捏着鼻子，因为从书的其他部分可以学到许多关于普世理想的东西。事实上，我会向任何文化背景、任何平台、任何目标的开发者推荐这本书，因为它所宣扬的许多价值观都是普世的。当雷蒙德指出 CSV 格式不如/etc/passwd 格式时，他是在为 Unix 与 Windows 的竞争加分，但你知道吗？他是对的。/etc/passwd比CSV更容易解析，如果你读了这本书，你就会知道为什么，你也会成为一个更好的程序员。
+
+Q: Has your computing experience thus far aligned more with “Windows culture” or “Unix culture”? What makes you feel that way? Do you feel that this blog post still holds up today, over 20 years since its publishing?
+
+I personally aligned more with "Windows culture" so far. Though I do think that WSL for me is somehow indispensable, and I do enjoy 
+
+但我仍然认为 Windows 的图形化指令是我会更多地使用的. 现如今，我并不完全认同作者说的“Windows能够确认邮件，因
