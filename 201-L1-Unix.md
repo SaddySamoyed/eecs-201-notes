@@ -126,6 +126,18 @@ cat --help
    echo "hello world" > some-file
    ```
 
+   **注意，第一个 redirection 使用 `>` 符号，而之后则使用 `>>`，这样就会继续接着在下一行写，而不会覆盖之前写的，否则会覆盖文件.**
+
+   ```shell
+   echo '#include <iostream>' > helloworld.cpp
+   echo 'int main() {' >> helloworld.cpp
+   echo '    std::cout << "Hello, World!" << std::endl;' >> helloworld.cpp
+   echo '    return 0;' >> helloworld.cpp
+   echo '}' >> helloworld.cpp
+   ```
+
+   
+
 3. retrieve 一个 file 作为 input，输送到一个 command，符号是一个 **input redirection (`<`)**：
 
    ```shell
