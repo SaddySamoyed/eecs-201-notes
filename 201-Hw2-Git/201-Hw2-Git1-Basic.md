@@ -308,3 +308,40 @@ Note that `issue149` and `master` have not diverged, making this process painles
    This will necessitate a special merge commit that gets automatically generated (which you don’t have to reword for this assignment). If the merge has to stop due to not being automatically resolved, use git status to see where the merge conflict is occurring and modify the files toget them into working order (i.e. it compiles and runs as intended for that branch), then complete the merge
    ( git status will give you instructions on how to do this).
 
+## 5 Remote
+
+1. 在 Gitlab 创建一个账号并添加和用于这个服务器一样的 ssh. 
+2. 创建一个新的 private project.
+3. 添加这个 gitlab 上的 project 为我们刚刚 directory 的 remote origin.
+
+4. push 我们当前 branch 上所有 commits 到 remote.
+
+```shell
+git push -u origin --all
+```
+
+## 6 GitLab 提交
+
+1. 在服务器里 gen 一个 ssh，然后加到 GitLab 账号里.
+
+2. 然后创建一个 project: `eecs201-basic-git1.git`
+
+3. 然后把它添加为我们这个 local repo 的 origin.
+
+```shell
+git remote add origin git@gitlab.eecs.umich.edu:rynnefan/eecs201-basic-git1.git 
+```
+
+4. 把我们本地所有 branch 的 所有 commits push 到 remote:
+
+```shell
+git push -u origin --all
+```
+
+5. 在 server 跑一下作业看看结果.
+
+```shell
+eecs201-test basic-git1
+```
+
+all pass！
