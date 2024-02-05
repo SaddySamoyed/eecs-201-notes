@@ -39,7 +39,7 @@ git checkout $(git rev-parse HEAD^) -- *.png
 
 `$` 表示把一个指令的值嵌入外面的指令作为参数.
 
-### 第二题: delete 了一个 branch 导致一个 commit 因为 poor rebase 被删除了, recover 这个 commit
+## 第二题: delete 了一个 branch 导致一个 commit 因为 poor rebase 被删除了, recover 这个 commit
 
 这里要 recover 这个 commit，指要么 move HEAD 到 lost commit，要么能够 identify 它的 hash 值.
 
@@ -47,3 +47,23 @@ git checkout $(git rev-parse HEAD^) -- *.png
 git branch recovery $(git reflog | grep 'rebase' | head -n 1 | awk '{print $1}')
 ```
 
+
+
+
+
+## 第三题：恢复被 `git reset --hard` 删除的 changes
+
+`git add my_file` stages a file, but it isn’t actually committed until you run git commit.
+Sometimes you change your mind after a git add and run `git reset my_file` to unstage a file. The changes to that file are still there, however. To **really undo changes**, you use `git reset --hard` (or `git restore` or `git checkout`).
+
+It can be a little too easy to accidentally type the wrongthing. 
+
+In this repository, someone accidentally typed `git reset --hard` when they meant to just type `git reset`.
+
+Fortunately, because they had already run `git add` to stage their changes, the deleted changes can be recovered.
+
+Q1: 用什么指令来 recover initially staged contents?
+
+
+
+Q2: What is the output of running `$ ./main`
