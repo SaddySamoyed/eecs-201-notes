@@ -1,3 +1,5 @@
+[TOC]
+
 # 201-Hw2-Git1-Adv
 
 下载文件.
@@ -8,6 +10,10 @@ tar xzf basic-git1.tar.gz
 ```
 
 ## 第一题: 不使用 `git revert` 或者 `git reset` 就恢复文件到上一次 commit
+
+题目：上一次 commit 删了所有的 `.png` 文件. 现在要恢复这些文件，并且不能使用 `git revert` 或者 `git reset`.
+
+我的答案：
 
 我们可以使用：
 
@@ -32,4 +38,12 @@ git checkout $(git rev-parse HEAD^) -- *.png
 ```
 
 `$` 表示把一个指令的值嵌入外面的指令作为参数.
+
+### 第二题: delete 了一个 branch 导致一个 commit 因为 poor rebase 被删除了, recover 这个 commit
+
+这里要 recover 这个 commit，指要么 move HEAD 到 lost commit，要么能够 identify 它的 hash 值.
+
+```shell
+git branch recovery $(git reflog | grep 'rebase' | head -n 1 | awk '{print $1}')
+```
 
