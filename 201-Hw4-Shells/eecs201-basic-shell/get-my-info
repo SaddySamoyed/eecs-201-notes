@@ -1,0 +1,25 @@
+#!/bin/bash
+
+# The first argument to the script, default to '/' if not provided
+dir=${1:-'/'} 
+
+# Get user name
+userName=$(logname)
+
+# Get operating system
+os=$(uname -s)
+
+# Get hostname
+hostName=$(uname -n)
+
+# Get disk usage information for the specified directory
+diskUsage=$(df -h "$dir" | tail -n 1)
+usedSpace=$(echo "$diskUsage" | awk '{print $3}')
+totalSpace=$(echo "$diskUsage" | awk '{print $2}')
+percentUsed=$(echo "$diskUsage" | awk '{print $5}')
+
+# Print the information
+echo "Login: $userName"
+echo "OS: $os"
+echo "hostname: $hostName"
+echo "$dir's device: $usedSpace/$totalSpace ($percentUsed)"
