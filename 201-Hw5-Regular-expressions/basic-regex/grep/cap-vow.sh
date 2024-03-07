@@ -3,6 +3,7 @@
 # cap-vow.sh <path to dictionary file>
 # ^ This specifies that the dictionary file path is the first argument
 #   and the angle brackets specifies that it's a mandatory argument
+# print out words in the dictionary that start with a capital vowel
 # (for the sake of this assignment: a,e,i,o,u are vowels, and y is never a vowel)
 # Like in the dictionary file, each word should be on its own line
 # *This must use only one grep command*
