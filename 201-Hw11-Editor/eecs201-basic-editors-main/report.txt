@@ -1,0 +1,2 @@
+20
+Text editor: do something macroly
