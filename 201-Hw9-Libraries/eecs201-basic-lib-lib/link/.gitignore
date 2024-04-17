@@ -1,0 +1,7 @@
+libthingy.a
+libthingy.so
+app-dynamic
+app-static
+getlib.sh
+libs/
+*.dSYM

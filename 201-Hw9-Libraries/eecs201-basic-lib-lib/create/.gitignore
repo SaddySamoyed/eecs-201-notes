@@ -1,0 +1,5 @@
+libobj
+lib
+app-dynamic
+app-static
+*.dSYM
